@@ -1,4 +1,4 @@
-# introduction-to-pogramming
+# ASSIGHNMENT-1
 this repo is created to submit itp assighnment files of team-11
 TEAM MEMBERS
 IEC2021042-SUBHASHIS MALICK
