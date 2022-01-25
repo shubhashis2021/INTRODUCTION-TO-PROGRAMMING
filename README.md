@@ -135,6 +135,11 @@ triangular matrix.
 ▪ It is a very user friendly and menu driven program a gives freedom to the user to check 
 for upper and lower triangularity.
 
-                                                                                                                       
+#REFERENCES
+1. https://www.codechef.com/ide- For checking the run time of program
+2. https://ncert.nic.in/textbook.php NCERT Class 12- For basic knowledge of 
+matrices and determinants.
+3. Let us C (Yashavant Kanetkar) - For basic C language theory
+  
                                                                                                                        
                                                                                                                        
