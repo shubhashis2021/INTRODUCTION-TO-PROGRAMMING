@@ -135,11 +135,100 @@ triangular matrix.
 ▪ It is a very user friendly and menu driven program a gives freedom to the user to check 
 for upper and lower triangularity.
 
-#REFERENCES
+# REFERENCES
 1. https://www.codechef.com/ide- For checking the run time of program
 2. https://ncert.nic.in/textbook.php NCERT Class 12- For basic knowledge of 
 matrices and determinants.
 3. Let us C (Yashavant Kanetkar) - For basic C language theory
   
+# CODE
+  #include<stdio.h>
+int main()
+{
+    int i,j,option;
+    int p;
+    int c=0;
+    int f = 0;
+    int k =0;
+    int number; // a variable to count minimum number of zeros in any triangular matrix
+    printf("enter the size of the array: ");
+    int n;
+    scanf("%d",&n);
+    int arr[n][n];
+    printf("enter the elements in the array \n ");
+    for(i=0;i<n;i++)
+    {   for(j=0;j<n;j++)
+         {    
+           scanf("%d",&arr[i][j]);
+         }
+    } p = n-1; // using formula
+    number = n*p/2;  // we all know that the minimum number of zero in any triangular matrix of order n is n(n-1)/2
+     
+printf("enter 1 for checking upper triangularity of the matrix ");
+printf(" \n enter 2 for checking lower triangularity of the matrix ");
+scanf("%d",&option);
+switch(option)
+{
+    case 1 : for(i=0;i<n;i++)
+             {  
+                 for (j=0;j<n;j++)
+                 {   if(i==j){
+                     if(arr[i][j]==0)
+                           f=1;
+                    
+                 }   else if (i>j){
+                     if(arr[i][j]==0)
+                           c++;
+                 } else{
+                   if(arr[i][j]==0)
+                       k++;
+            
+                     
+                 
+                 } 
+                 }
+                 if (f==1){ // to check whether there is a non zero element in main diagonal of the given matrix
+                 printf("not a triangular matrix"); 
+                  break;
+                  }
+             
+             } if (c>=number && k!=c){  // check that the counter variable is atleast greater than the minimum number of zeros
+               printf("this is a upper triangular matrix");
+             } else {
+                 printf("\n this is not a upper triangular matrix");
+             }
+             
+       break;
+    case 2 : for(i=0;i<n;i++)
+             {  
+                 for (j=0;j<n;j++)
+                 {   if(i==j){
+                     if(arr[i][j]==0)
+                           f=1;
+                    
+                 }   else if (i<j){
+                     if(arr[i][j]==0)
+                           c++;
+                 } else {
+                   if(arr[i][j]==0)
+                       k++;
+                     
+                 } 
+                 } 
+                 if (f==1){
+                 printf("not a triangular matrix"); 
+                  break;
+                 }
+             
+             }if (c>=number && k!=c){
+               printf("this is a lower triangular matrix");
+             } else {
+                 printf(" \n this is not a lower triangular matrix");
+             }
+         break;
+       default : printf("incorrect option choosen");
+}
+return 0;
+}
                                                                                                                        
                                                                                                                        
