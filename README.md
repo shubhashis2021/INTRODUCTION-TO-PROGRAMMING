@@ -18,6 +18,19 @@ Faculty Name-"Md. Javed Sir"
 
 Mentor Name- "Md. Meraz Sir"
 
+# ALGORITHM
+• Take input from the user for the size of double dimension array (n).
+• Define an integer array arr[n][n] and take input from console for the elements of the array arr[n][n].
+• Calculate the minimum number of zeros that should be present in any triangular matrix of order n by the formula n(n-1)/2 and store 
+it in any variable(number).
+• Define a switch case with 2 cases for checking the upper and lower triangularity of the matrix.
+• For checking the upper triangularity, set conditions to check arr[i][j] ≠ 0, for all i=j and arr[i][j]=0 for all i>j and set a flag variable 
+(f=1) and counter (c++) variable respectively.
+• For checking the lower triangularity, set conditions to check arr[i][j] ≠ 0, for all i=j and arr[i][j]=0 for all i<j and sets a flag 
+variable (f=1) and counter (c++) variable respectively.
+• If the value of counter variable (c)= number and f ≠ 1 then the given matrix is triangular else print the matrix is not triangular.
+
+                                                                                                                       
 # PROCEDURE
 • When the compilation begins at first, the compiler asks for the order of the 2D Array from the user.
 ▪ Enter size of the array as 3 (from console)
@@ -37,18 +50,7 @@ accordingly and thus value of “c” or “f” will be updated for each iterat
 gradually to 2 and thus the other positions like arr[1][0], arr[1][1], arr[1][2], arr[2][0], arr[2][1], arr[2][2] will be checked similarly and value of “c” and “f” 
 will be updated.
 Finally it will check that value of c = number and f ≠ 1, if found true, it will print “it is a triangular matrix” else it will print “not a triangular matrix”.
-
-# ALGORITHM
-• Take input from the user for the size of double dimension array (n).
-• Define an integer array arr[n][n] and take input from console for the elements of the array arr[n][n].
-• Calculate the minimum number of zeros that should be present in any triangular matrix of order n by the formula n(n-1)/2 and store 
-it in any variable(number).
-• Define a switch case with 2 cases for checking the upper and lower triangularity of the matrix.
-• For checking the upper triangularity, set conditions to check arr[i][j] ≠ 0, for all i=j and arr[i][j]=0 for all i>j and set a flag variable 
-(f=1) and counter (c++) variable respectively.
-• For checking the lower triangularity, set conditions to check arr[i][j] ≠ 0, for all i=j and arr[i][j]=0 for all i<j and sets a flag 
-variable (f=1) and counter (c++) variable respectively.
-• If the value of counter variable (c)= number and f ≠ 1 then the given matrix is triangular else print the matrix is not triangular. 
+ 
 
 # TIME COMPLEXITY                                                                                                                    
 To our program there can be six completely different 
